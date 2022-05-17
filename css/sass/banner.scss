@@ -1,0 +1,71 @@
+.banner {
+  background-image: url(../img/Group-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: rem(650px);
+  margin-bottom: rem(77px);
+}
+
+.banner__form {
+  background-image: url(../img/back-form-desktop.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: rem(400px);
+  margin-bottom: rem(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__title {
+  font-weight: 300;
+  font-size: rem(50px);
+  line-height: rem(68px);
+  color: $white;
+  text-align: center;
+  width: rem(300px);
+
+  &--form {
+    width: 60%;
+    margin-top: 6%;
+  }
+
+  &--catalog {
+    margin-top: 6%;
+    width: rem(357px);
+  }
+}
+
+.banner__download {
+  font-weight: bold;
+  font-size: rem(21px);
+  line-height: rem(18px);
+  border: 3px solid #FFFFFF;
+  color: $white;
+  padding: rem(20px) rem(32px) rem(20px) rem(31px);
+  border-radius: rem(29px);
+  background-color: inherit;
+  margin-bottom: rem(75px);
+  cursor: pointer;
+
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.banner__text {
+  color: $white;
+  font-weight: 300;
+  font-size: rem(18px);
+  line-height: rem(24px);
+  text-align: center;
+  width: rem(300px);
+}

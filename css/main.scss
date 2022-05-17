@@ -1,0 +1,48 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//Colors
+$white: #FFFFFF;
+$dark-white: #F2F2F2;
+$black: #292929;
+$pink: #D22856;
+$light-black: #283645;
+$light-gray: #F2F2F2;
+$green: #2AAB6D;
+$dark-green: #1C9B5E;
+
+
+
+//media
+@import "media";
+
+//setup
+
+@import "layout";
+
+//blocks
+@import "sass/section.scss";
+@import "sass/banner.scss";
+@import "sass/fonts.scss";
+@import "sass/app-stores.scss";
+@import "sass/page-header.scss";
+@import "sass/main-nav.scss";
+@import "sass/advantages.scss";
+@import "sass/science-fact.scss";
+@import "sass/reviews.scss";
+@import "sass/subscription.scss";
+@import "sass/contacts.scss";
+@import "sass/social.scss";
+@import "sass/page-footer.scss";
+@import "sass/map.scss";
+@import "sass/popup.scss";
+@import "sass/achivments.scss";
+@import "sass/device.scss";
+@import "sass/form.scss";
+@import "sass/heading.scss";
+@import "sass/contacts-user.scss";
+@import "sass/comment-form.scss";
+@import "sass/panorama.scss";
+@import "sass/comment.scss";
+@import "sass/gallery.scss";
+@import "sass/photo-editor.scss";

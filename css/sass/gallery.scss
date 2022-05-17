@@ -1,0 +1,41 @@
+.gallery {
+  margin-bottom: rem(64px);
+}
+
+.gallery__list {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 54px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+
+.gallery__item {
+  overflow: hidden;
+  width: 100%;
+  max-width: rem(300px);
+}
+
+.gallery__img-wrapper {
+  max-height: rem(400px);
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery__comment {
+  width: 100%;
+  max-width: rem(300px);
+  min-height: rem(155px);
+  padding: 27px 27px 26px 27px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__img {
+  cursor: zoom-in;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+}

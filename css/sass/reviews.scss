@@ -1,0 +1,84 @@
+.reviews {
+  display: flex;
+  align-items: center;
+  min-height: rem(420px);
+}
+
+.reviews__slider {
+  display: flex;
+}
+
+.reviews__wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.reviews__item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &:before {
+    content: url(../img/quotes.png);
+    margin-bottom: rem(56px);
+    order: -2;
+  }
+}
+
+.reviews__arrow {
+  width: rem(22px);
+  height: rem(41px);
+  fill: $light-black;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__text {
+  order: -1;
+  color: $light-black;
+  margin-bottom: rem(50px);
+}
+
+.reviews__author {
+  font-weight: 700;
+  font-style: normal;
+  font-size: rem(24px);
+  line-height: rem(30px);
+  margin-bottom: rem(10px);
+}
+
+.reviews__author-info {
+  color: $light-black;
+}
+
+.reviews__prev {
+  width: 10%;
+  order: -1;
+  align-self: center;
+  text-align: center;
+}
+
+.reviews__next {
+  width: 10%;
+  align-self: center;
+  text-align: center;
+}
+
+.reviews__toggles {
+  display: none;
+}

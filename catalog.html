@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="main.html" class="page-header__logo">
+          <svg class="page-header__logo-image">
+            <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="main.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/profession/frontender">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Фотогалерея PINK</h1>
+      <div class="banner__form">
+        <h2 class="banner__title banner__title--catalog">Фотографии пользователей</h2>
+      </div>
+      <div class="container">
+        <div class="heading">
+          <p class="heading__text heading__text--catalog">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?!</p>
+        </div>
+      </div>
+
+      <section class="panorama">
+        <div class="panorama__wrapper">
+          <img class="panorama__img" src="img/panorama-desktop.jpg" width="1200" height="506" alt="Панорама дня">
+          <div class="panorama__desc">
+            <p class="panorama__desc-text">Панорама дня</p>
+          </div>
+        </div>
+          <div class="container comment">
+            <div class="comment__info">
+              <cite class="comment__author">Анна<span class="comment__time">(5 минут назад)</span></cite>
+              <div class="comment__btn-like">
+                <button class="comment__button" type="button">Нравится: 215</button>
+                <span>
+                  <svg class="comment__button-img">
+                    <use xlink:href="img/sprite.svg#like"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <div class="gallery__img-wrapper">
+                  <img class="gallery__img" src="img/photo-levon.jpg" width="300" height="400" alt="фото Левона">
+                </div>
+                <div class="gallery__comment comment">
+                  <cite class="comment__author">Левон<span class="comment__time">(5 часов назад)</span></cite>
+                  <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <div class="comment__btn-like comment__btn-like--gallery">
+                    <button class="comment__button" type="button">Нравится: 386</button>
+                    <span>
+                      <svg class="comment__button-img">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__img-wrapper">
+                  <img class="gallery__img" src="img/photo-anton.jpg" width="300" height="400" alt="фото Антона">
+                </div>
+                <div class="gallery__comment comment">
+                  <cite class="comment__author">Антон<span class="comment__time">(12 часов назад)</span></cite>
+                  <p class="comment__text">Соседи будут рады!</p>
+                  <div class="comment__btn-like comment__btn-like--gallery">
+                    <button class="comment__button" type="button">Нравится: 666</button>
+                    <span>
+                      <svg class="comment__button-img">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__img-wrapper">
+                  <img class="gallery__img" src="img/photo-boris.jpg" width="300" height="400" alt="фото Бориса">
+                </div>
+                <div class="gallery__comment comment">
+                  <cite class="comment__author">Борис<span class="comment__time">(20 часов назад)</span></cite>
+                  <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <div class="comment__btn-like comment__btn-like--gallery">
+                    <button class="comment__button" type="button">Нравится: 215</button>
+                    <span>
+                      <svg class="comment__button-img">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__img-wrapper">
+                  <img class="gallery__img" src="img/photo-sergey.jpg" width="300" height="400" alt="фото Сергея">
+                </div>
+                <div class="gallery__comment comment">
+                  <cite class="comment__author">Сергей<span class="comment__time">(25 часов назад)</span></cite>
+                  <p class="comment__text">Самая кубанская в мире!</p>
+                  <div class="comment__btn-like comment__btn-like--gallery">
+                    <button class="comment__button" type="button">Нравится: 4</button>
+                    <span>
+                      <svg class="comment__button-img">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__img-wrapper">
+                  <img class="gallery__img" src="img/photo-maks.jpg" width="300" height="400" alt="фото Максима">
+                </div>
+                <div class="gallery__comment comment">
+                  <cite class="comment__author">Максим<span class="comment__time">(40 часов назад)</span></cite>
+                  <p class="comment__text">Где снег-то?</p>
+                  <div class="comment__btn-like comment__btn-like--gallery">
+                    <button class="comment__button" type="button">Нравится: 150</button>
+                    <span>
+                      <svg class="comment__button-img">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__img-wrapper">
+                  <img class="gallery__img" src="img/photo-nadia.jpg" width="300" height="400" alt="фото Надежды">
+                </div>
+                <div class="gallery__comment comment">
+                  <cite class="comment__author">Надежда<span class="comment__time">(45 часов назад)</span></cite>
+                  <p class="comment__text">Всем GM и взаимные лайки!</p>
+                  <div class="comment__btn-like comment__btn-like--gallery">
+                    <button class="comment__button" type="button">Нравится: 2560</button>
+                    <span>
+                      <svg class="comment__button-img">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-editor">
+        <div class="container">
+          <div class="heading">
+            <p class="heading__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+          <div class="photo-editor__configurator">
+            <div class="photo-editor__user-photo">
+              <img class="photo-editor__user-img" src="img/photo-user.jpg" width="300" height="400" alt="Фото пользователя">
+            </div>
+            <div class="photo-editor__setting">
+              <div class="photo-editor__control">
+                <button class="photo-editor__setting-button" title="Обводка">
+                  <svg class="photo-editor__setting-btn">
+                    <use xlink:href="img/sprite.svg#stroke"></use>
+                  </svg>
+                </button>
+                <div class="photo-editor__line">
+                  <button class="photo-editor__scale-btn"></button>
+                </div>
+              </div>
+              <div class="photo-editor__control">
+                <button class="photo-editor__setting-button" title="Заливка">
+                  <svg class="photo-editor__setting-btn">
+                    <use xlink:href="img/sprite.svg#fill"></use>
+                  </svg>
+                </button>
+                <div class="photo-editor__line">
+                  <button class="photo-editor__scale-btn"></button>
+                </div>
+              </div>
+              <div class="photo-editor__control">
+                <button class="photo-editor__setting-button" title="Контраст">
+                  <svg class="photo-editor__setting-btn">
+                    <use xlink:href="img/sprite.svg#contrast"></use>
+                  </svg>
+                </button>
+                <div class="photo-editor__line">
+                  <button class="photo-editor__scale-btn"></button>
+                </div>
+              </div>
+              <div class="photo-editor__button-wrap">
+                <button class="photo-editor__button" type="button">Запостить</button>
+                <button class="photo-editor__button-off photo-editor__button--disabled" type="button">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <svg class="page-footer__logo-img">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com/htmlacademy_ru" title="Страница в Twitter">
+                  <svg class="social__link-img">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy/" title="Страница в Facebook">
+                  <svg class="social__link-img">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" title="канал на YouTube">
+                  <svg class="social__link-img">
+                    <use xlink:href="img/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright ">
+            <b class="page-footer__copyright-text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="page-footer__copyright-logo">
+                <use xlink:href="img/sprite.svg#html-academy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

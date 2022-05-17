@@ -1,0 +1,14 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(84px);
+}
+.heading__text {
+  text-align: center;
+  width: 85%;
+  font-size: rem(18px);
+
+  &--catalog {
+    width: 65%;
+  }
+}

@@ -1,0 +1,23 @@
+.comment-form {
+  width: 100%;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(69px);
+}
+
+.comment-form__textarea {
+  height: rem(124px);
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  width: 96%;
+  margin-top: rem(37px);
+  margin-bottom: rem(45px);
+  resize: none;
+
+  &:hover {
+    border-color: $black;
+  }
+}

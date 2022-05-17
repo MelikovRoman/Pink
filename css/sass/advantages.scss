@@ -1,0 +1,47 @@
+.advantages {
+  background-image: url(../img/grey-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center rem(260px);
+  min-height: rem(650px);
+}
+
+.advantages__title {
+  margin-bottom: rem(72px);
+}
+
+.advantages__description {
+  color: $light-black;
+}
+
+.advantages__list {
+  display: flex;
+  text-align: center;
+}
+
+.advantages__item {
+  margin-right: 8%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.advantages__image {
+  min-height: rem(300px);
+  margin: 0 auto;
+  margin-bottom: rem(59px);
+  border-radius: 28px 28px 0px 0px;
+  box-shadow: 3px 20px 17px 3px rgba(0,0,0,0.25);
+}
+
+.advantages__headline {
+  font-weight: 700;
+  font-size: rem(30px);
+  line-height: rem(30px);
+}
+
+.advantages__description {
+  margin-bottom: rem(59px);
+}
+

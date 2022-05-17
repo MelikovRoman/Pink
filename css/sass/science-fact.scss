@@ -1,0 +1,37 @@
+.science-fact {
+  background-color: $light-gray;
+  min-height: rem(420px);
+  margin-bottom: rem(72px);
+}
+
+.science-fact__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.science-fact__image {
+  width: 40%;
+}
+
+.science-fact__discription {
+  width: 55%;
+}
+
+.science-fact__title {
+  color: $light-black;
+  font-weight: 700;
+  font-size: rem(30px);
+  line-height: rem(30px);
+  margin-bottom: rem(37px);
+}
+
+.science-fact__text {
+  color: $light-black;
+  margin-bottom: rem(47px);
+}
+
+.science-fact__link {
+  color: $pink;
+  text-decoration: underline;
+}

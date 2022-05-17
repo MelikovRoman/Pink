@@ -1,0 +1,19 @@
+.app-stores {
+  display: flex;
+  justify-content: space-around;
+  width: rem(300px);
+  margin-bottom: rem(60px);
+}
+
+.app-stores__logo {
+  width: rem(43px);
+  height: rem(47px);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}

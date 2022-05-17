@@ -1,0 +1,38 @@
+.main-nav {
+  width: 70%;
+}
+
+.main-nav__list {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ height: rem(110px);
+}
+
+.main-nav__item {
+  margin-right: rem(10px);
+  color: $white;
+
+  &--active {
+    border-bottom: 2px solid $white;
+
+    &:hover {
+      border-bottom: 2px solid $pink;
+    }
+  }
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+

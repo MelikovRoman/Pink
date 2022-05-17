@@ -1,0 +1,65 @@
+.achivments {
+  width: 100%;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  margin-bottom: rem(64px);
+}
+
+.achivments__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.achivments__item {
+  margin-bottom: 15px;
+  min-width: rem(250px);
+}
+
+.achivments__label {
+  color: $light-black;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  user-select: none;
+  padding-left: rem(42px);
+}
+
+.achivments__checkbox {
+
+  & + label::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(229, 229, 229, 1);
+  }
+
+  &:hover + label::before {
+    border: 2px solid $light-black;
+  }
+
+  &:active + label::before {
+    border: 2px solid $pink;
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 35px;
+    height: 35px;
+    background-image: url("/../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+
+
+
+

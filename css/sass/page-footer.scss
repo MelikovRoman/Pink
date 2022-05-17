@@ -1,0 +1,48 @@
+.page-footer {
+  height: rem(160px);
+  display: flex;
+  align-items: center;
+  background-color: $white;
+}
+
+.page-footer__logo-img {
+  cursor: pointer;
+  width: rem(147px);
+  height: rem(40px);
+  fill: $light-black;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__copyright {
+  display: flex;
+}
+
+.page-footer__copyright-text {
+  margin-right: rem(13px);
+}
+
+.page-footer__copyright-logo {
+  width: rem(27px);
+  height: rem(40px);
+  fill: $pink;
+
+  &:hover {
+    fill: $light-black;
+  }
+
+  &:active {
+    opacity: 0.3
+  }
+}

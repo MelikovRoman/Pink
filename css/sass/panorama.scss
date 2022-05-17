@@ -1,0 +1,32 @@
+.panorama {
+  margin-bottom: rem(50px);
+}
+
+.panorama__wrapper {
+  position: relative;
+}
+
+.panorama__desc {
+  position: absolute;
+  top: 8%;
+  right: 20%;
+}
+
+.panorama__desc-text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: $pink;
+  color: $white;
+  text-align: center;
+  padding: 13px 20px 14px 19px;
+}
+
+.panorama__img {
+  left: 0;
+  width: 100vw;
+}
+
+

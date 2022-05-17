@@ -1,0 +1,63 @@
+.device {
+  order: -2;
+  flex: 1;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  padding-top: 0;
+  margin-bottom: rem(64px);
+}
+
+.device__list {
+  padding-top: 10%;
+  padding-left: 18%;
+}
+
+.device__item {
+  margin-bottom: rem(39px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.device__label {
+  color: $light-black;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  user-select: none;
+  padding-left: rem(42px);
+}
+
+.device__radiobutton {
+
+  & + label::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 37px;
+    height: 37px;
+    border: 2px solid rgba(229, 229, 229, 1);
+    border-radius: 50%;
+  }
+
+  &:hover + label::before {
+    border: 2px solid $light-black;
+  }
+
+  &:active + label::before {
+    border: 2px solid $pink;
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0.3em;
+    top: 45%;
+    width: 15px;
+    height: 15px;
+    background-color: $pink;
+    border-radius: 50%;
+  }
+}

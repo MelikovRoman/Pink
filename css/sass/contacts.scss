@@ -1,0 +1,28 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.contacts__item {
+  text-align: center;
+  width: 30%;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: rem(18px);
+  line-height: rem(25px);
+  margin-bottom: rem(34px);
+}
+
+.contacts__link {
+  color: $pink;
+  font-weight: 300;
+  font-size: rem(24px);
+  line-height: rem(33px);
+}

@@ -1,0 +1,47 @@
+.subscription {
+  background-image: url(../img/grey-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: rem(500px);
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(74px);
+}
+
+.subscription__table {
+  width: 100%;
+}
+
+.subscription__table-heading {
+  color: $white;
+  background-color: $light-black;
+  min-width: rem(220px);
+  height: rem(94px);
+}
+
+.subscription__item {
+  min-width: rem(220px);
+  height: rem(59px);
+
+  &:first-child {
+    padding-left: rem(22px);
+  }
+}
+
+.subscription__img {
+  margin: auto;
+}
+
+.subscription__rate {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscription__price {
+  font-weight: 300;
+  font-size: rem(24px);
+}
+
+td {
+  background-color: $white;
+}
