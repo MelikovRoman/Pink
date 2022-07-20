@@ -14,10 +14,9 @@
 
   @include phone {
     background-image: url(../img/back-mobile.jpg);
-    background-position: center top;
-    background-size: 100vw 65vh;
+    background-position: top center;
+    background-size: 100vw 60vh;
     background-repeat: no-repeat;
-    object-fit: initial;
   }
 }
 
@@ -127,5 +126,6 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: rem(25px);
+    font-size: 14px;
   }
 }

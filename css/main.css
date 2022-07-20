@@ -152,11 +152,9 @@ img {
 @media screen and (max-width: 500px) {
   .banner {
     background-image: url(../img/back-mobile.jpg);
-    background-position: center top;
-    background-size: 100vw 65vh;
+    background-position: top center;
+    background-size: 100vw 60vh;
     background-repeat: no-repeat;
-    -o-object-fit: initial;
-       object-fit: initial;
   }
 }
 
@@ -279,6 +277,7 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1.3888888889rem;
+    font-size: 14px;
   }
 }
 
