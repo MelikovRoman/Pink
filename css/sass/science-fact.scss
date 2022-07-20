@@ -2,6 +2,10 @@
   background-color: $light-gray;
   min-height: rem(420px);
   margin-bottom: rem(72px);
+
+  @include phone {
+    display: none;
+  }
 }
 
 .science-fact__wrapper {

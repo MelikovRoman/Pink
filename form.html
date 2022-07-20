@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -15,7 +16,7 @@
             <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav__header">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -62,7 +63,7 @@
                 </div>
               </div>
               <fieldset class="achivments">
-                <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+                <legend class="form__title form__title--mobile">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="achivments__list">
                   <li class="achivments__item">
                     <input class="visually-hidden achivments__checkbox" type="checkbox" id="shark" name="shark-photo" checked>
@@ -91,7 +92,7 @@
                 </ul>
               </fieldset>
               <fieldset class="device">
-                <legend class="form__title">С каким приложением путешествовали?</legend>
+                <legend class="form__title form__title--mobile">С каким приложением путешествовали?</legend>
                 <ul class="device__list">
                   <li class="device__item">
                     <input class="visually-hidden device__radiobutton" type="radio" id="IOS" name="devices" checked>
@@ -108,7 +109,7 @@
                 </ul>
               </fieldset>
               <fieldset class="contacts-user">
-                <legend class="form__title">контактная информация</legend>
+                <legend class="form__title form__title--mobile-off">контактная информация</legend>
                 <div class="contacts-user__wrapper">
                   <label class="contacts-user__info">Номер телефона</label>
                   <div class="contacts-user__input-wrapper">
@@ -200,6 +201,42 @@
       <p class="popup__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <button class="popup__button-close">закрыть окно</button>
     </section>
+
+    <a class="hamburger " href="#">
+      <span class="hamburger__plank"></span>
+      <span class="hamburger__plank"></span>
+      <span class="hamburger__plank"></span>
+    </a>
+
+    <div class="overlay">
+      <div class="overlay__menu">
+        <a href="index.html" class="page-header__logo">
+          <svg class="page-header__logo-image">
+            <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/profession/frontender">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
 
   </body>
 </html>

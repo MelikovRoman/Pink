@@ -3,11 +3,6 @@
   padding: 31px 27px 31px 27px;
 }
 
-.comment__info {
-  display: flex;
-  justify-content: space-between;
-}
-
 .comment__author {
   color: $light-black;
   font-weight: 700;
@@ -45,6 +40,12 @@
     width: 100%;
     margin-top: auto;
   }
+
+  @include phone {
+    justify-content: start;
+    width: auto;
+    flex-direction: row-reverse;
+  }
 }
 
 .comment__button-img {
@@ -52,6 +53,10 @@
   height: rem(15px);
   cursor: pointer;
   fill: $pink;
+
+  @include phone {
+    margin-right: 18px;
+  }
 }
 
 .comment__text {

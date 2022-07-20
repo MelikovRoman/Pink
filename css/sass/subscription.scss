@@ -8,6 +8,12 @@
   margin-bottom: rem(74px);
 }
 
+.subscription__wrapper {
+  @include tablet {
+    overflow: hidden;
+  }
+}
+
 .subscription__table {
   width: 100%;
 }

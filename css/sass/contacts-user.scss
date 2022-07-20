@@ -7,6 +7,18 @@
   padding: rem(44px) 4% rem(25px) 4%;
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 46px 60px;
+  }
+
+  @include phone {
+    order: -2;
+    padding: 40px 10px;
+    border: none;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-user__wrapper {
@@ -17,6 +29,12 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include phone {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 29px;
   }
 }
 
@@ -37,7 +55,6 @@
 
 .contacts-user__input-img {
   background-color: #E5E5E5;
-  height: 100%;
   width: 15%;
   position: relative;
 }
@@ -58,4 +75,8 @@
   font-size: rem(14px);
   text-transform: uppercase;
   margin-top: rem(22px);
+
+  @include phone {
+    margin-top: 0;
+  }
 }

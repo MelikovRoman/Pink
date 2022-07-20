@@ -4,6 +4,14 @@
   top: 0;
   width: 100%;
 
+  @include tablet {
+    position: fixed;
+    margin-top: 0;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-header__container {
@@ -14,6 +22,18 @@
   margin-right: 15%;
   display: flex;
   align-items: center;
+
+  @include tablet {
+    top: 0;
+    left: 0;
+    margin: rem(27px) rem(5px);;
+  }
+}
+
+.page-header__logo-mobile {
+  display: flex;
+  align-items: center;
+  margin: rem(27px) rem(25px);;
 }
 
 .page-header__logo-image {

@@ -5,11 +5,28 @@
   border-radius: 1px;
   padding-top: 0;
   margin-bottom: rem(64px);
+
+  @include tablet {
+    order: -1;
+  }
+
+  @include phone {
+    border: none;
+    background-color: $dark-white;
+  }
 }
 
 .device__list {
   padding-top: 10%;
   padding-left: 18%;
+
+  @include tablet {
+    padding: 54px 60px
+  }
+
+  @include phone {
+    padding: 54px 10px;
+  }
 }
 
 .device__item {
@@ -35,7 +52,7 @@
     content: "";
     position: absolute;
     left: -8px;
-    top: 0;
+    top: -4px;
     width: 37px;
     height: 37px;
     border: 2px solid rgba(229, 229, 229, 1);
@@ -54,7 +71,7 @@
     content: "";
     position: absolute;
     left: 0.3em;
-    top: 45%;
+    top: 31%;
     width: 15px;
     height: 15px;
     background-color: $pink;

@@ -1,16 +1,20 @@
-.contacts {
-  position: relative;
-}
-
 .contacts__list {
   display: flex;
-  justify-content: space-around;
-  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
   text-align: center;
-  width: 30%;
+  width: 300px;
+
+  @include tablet {
+    margin-bottom: rem(55px);
+    &:nth-child(2) {
+      order: 1;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .contacts__title {

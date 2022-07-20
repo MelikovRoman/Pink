@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -15,7 +16,7 @@
             <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav__header">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -42,33 +43,35 @@
         <div class="container">
           <div class="banner__discription">
             <h2 class="banner__title">Взгляните на жизнь иначе!</h2>
-            <form action="https://www.apple.com/ru/app-store/" method="get">
-              <button class="banner__download" type="submit">Скачать приложение</button>
-            </form>
-            <ul class="banner__app-stores app-stores">
-              <li class="app-stores__item">
-                <a href="https://www.apple.com/ru/app-store/" title="Страница приложения в App Store">
-                  <svg class="app-stores__logo">
-                    <use xlink:href="img/sprite.svg#apple-logo"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="app-stores__item">
-                <a href="https://play.google.com/store?hl=ru&gl=US" title="Страница приложения в Google Play">
-                  <svg class="app-stores__logo">
-                    <use xlink:href="img/sprite.svg#android-logo"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="app-stores__item">
-                <a href="https://www.microsoft.com/ru-RU/store/apps" title="Страница приложения в Microsoft Store">
-                  <svg class="app-stores__logo">
-                    <use xlink:href="img/sprite.svg#microsoft-logo"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <div class="banner__info-wrapper">
+              <form class="banner__btn" action="https://www.apple.com/ru/app-store/" method="get">
+                <button class="banner__download" type="submit">Скачать приложение</button>
+              </form>
+              <ul class="banner__app-stores app-stores">
+                <li class="app-stores__item">
+                  <a href="https://www.apple.com/ru/app-store/" title="Страница приложения в App Store">
+                    <svg class="app-stores__logo">
+                      <use xlink:href="img/sprite.svg#apple-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="app-stores__item">
+                  <a href="https://play.google.com/store?hl=ru&gl=US" title="Страница приложения в Google Play">
+                    <svg class="app-stores__logo">
+                      <use xlink:href="img/sprite.svg#android-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="app-stores__item">
+                  <a href="https://www.microsoft.com/ru-RU/store/apps" title="Страница приложения в Microsoft Store">
+                    <svg class="app-stores__logo">
+                      <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
       </section>
@@ -77,6 +80,7 @@
         <div class="container">
           <h2 class="section__title advantages__title">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h2>
           <div class="advantages__wrapper">
+            <img class="advantages__image advantages__image--phone" src="img/phone-3.png">
             <ul class="advantages__list">
               <li class="advantages__item">
                 <img class="advantages__image" src="img/phone-1.png">
@@ -146,10 +150,10 @@
                 <use xlink:href="img/sprite.svg#right-arrow"></use>
               </svg>
             </a>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+            <p class="reviews__toggles ">
+              <button class="reviews__toggles-slider reviews__toggles-slider--current" type="button"></button>
+              <button class="reviews__toggles-slider" type="button"></button>
+              <button class="reviews__toggles-slider" type="button"></button>
             </p>
           </div>
         </div>
@@ -273,6 +277,42 @@
         </div>
       </div>
     </footer>
+
+    <a class="hamburger" href="#">
+      <span class="hamburger__plank"></span>
+      <span class="hamburger__plank"></span>
+      <span class="hamburger__plank"></span>
+    </a>
+
+    <div class="overlay">
+      <div class="overlay__menu">
+        <a href="index.html" class="page-header__logo-mobile">
+          <svg class="page-header__logo-image">
+            <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/profession/frontender">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
 
   </body>
 </html>

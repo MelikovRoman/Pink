@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -15,7 +16,7 @@
             <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav__header">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -275,6 +276,42 @@
         </div>
       </div>
     </footer>
+
+    <a class="hamburger " href="#">
+      <span class="hamburger__plank"></span>
+      <span class="hamburger__plank"></span>
+      <span class="hamburger__plank"></span>
+    </a>
+
+    <div class="overlay">
+      <div class="overlay__menu">
+        <a href="index.html" class="page-header__logo">
+          <svg class="page-header__logo-image">
+            <use xlink:href="img/sprite.svg#main-logo-desktop"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/profession/frontender">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
 
   </body>
 </html>

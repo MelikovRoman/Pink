@@ -20,4 +20,12 @@
   &:hover {
     border-color: $black;
   }
+
+  @include tablet {
+    margin: rem(42px) rem(40px);
+  }
+
+  @include phone {
+    margin: rem(40px) 0px;
+  }
 }

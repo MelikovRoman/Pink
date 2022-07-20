@@ -5,10 +5,24 @@
   display: flex;
   padding: rem(57px) rem(80px);
 
+  @include phone {
+    flex-direction: column;
+    padding: rem(20px) rem(20px);
+  }
 }
 
 .photo-editor__user-photo {
   flex: 1;
+
+  @include phone {
+    margin-bottom: 30px;
+  }
+}
+
+.photo-editor__user-img {
+  @include phone {
+    width: 100%;
+  }
 }
 
 .photo-editor__setting {
@@ -77,6 +91,10 @@
 
 .photo-editor__button-wrap {
   margin-top: auto;
+
+  @include phone {
+    width: 100%;
+  }
 }
 
 .photo-editor__button {
@@ -121,5 +139,12 @@
       opacity: 0.3;
     }
 
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  @include phone {
+    width: 100%;
   }
 }

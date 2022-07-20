@@ -8,12 +8,20 @@
   grid-row-gap: 54px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
+
+  @include tablet {
+    grid-row-gap: 20px;
+  }
 }
 
 .gallery__item {
   overflow: hidden;
   width: 100%;
   max-width: rem(300px);
+
+  @include phone {
+    max-width: rem(280px);
+  }
 }
 
 .gallery__img-wrapper {
@@ -29,6 +37,10 @@
   padding: 27px 27px 26px 27px;
   display: flex;
   flex-direction: column;
+
+  @include phone {
+    max-width: rem(280px);
+  }
 }
 
 .gallery__img {

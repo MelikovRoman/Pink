@@ -1,0 +1,22 @@
+.overlay {
+  height: 40%;
+  width: 100%;
+  background-color: $light-black;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  position:fixed;
+  bottom: 100%;
+  opacity: 0;
+  transition:all .3s;
+  z-index: 0;
+
+  &--active {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.overlay__menu {
+  margin-top: auto;
+}

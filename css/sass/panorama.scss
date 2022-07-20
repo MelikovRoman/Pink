@@ -10,6 +10,11 @@
   position: absolute;
   top: 8%;
   right: 20%;
+
+  @include phone {
+    top: 0;
+    right: 5%;
+  }
 }
 
 .panorama__desc-text {
@@ -27,6 +32,11 @@
 .panorama__img {
   left: 0;
   width: 100vw;
+
+  @include phone {
+    height: 25%;
+    width: 100%;
+  }
 }
 
 

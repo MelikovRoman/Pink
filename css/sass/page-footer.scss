@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
   background-color: $white;
+
+  @include phone {
+    height: auto;
+  }
+}
+
+.page-footer__logo {
+  display: flex;
 }
 
 .page-footer__logo-img {
@@ -23,6 +31,25 @@
 .page-footer__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include phone {
+    flex-direction: column;
+  }
+
+  & > div {
+    @include phone {
+      justify-content: center;
+      margin-bottom: rem(41px);
+
+      &:first-child {
+        margin-top: rem(30px);
+      }
+
+      &:last-child {
+        margin-bottom: rem(30px);
+      }
+    }
+  }
 }
 
 .page-footer__copyright {

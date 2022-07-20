@@ -3,6 +3,12 @@
   border: 2px solid #E5E5E5;
   border-radius: 1px;
   margin-bottom: rem(64px);
+
+  @include phone {
+    order: -2;
+    border: none;
+    background-color: $dark-white;
+  }
 }
 
 .achivments__list {
@@ -10,11 +16,28 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 49px 60px;
+  }
+
+  @include phone {
+    padding: 49px 10px;
+  }
 }
 
 .achivments__item {
   margin-bottom: 15px;
   min-width: rem(250px);
+
+  @include tablet {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .achivments__label {

@@ -3,9 +3,35 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $light-black;
   height: 100vh;
-  min-height: rem(650px);
   margin-bottom: rem(77px);
+  object-fit: cover;
+
+  @include tablet {
+    background-position: 65% 50%;
+  }
+
+  @include phone {
+    background-image: url(../img/back-mobile.jpg);
+    background-position: center top;
+    background-size: 100vw 65vh;
+    background-repeat: no-repeat;
+    object-fit: initial;
+  }
+}
+
+.banner__discription {
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+}
+
+.banner__info-wrapper {
+  width: 100%;
 }
 
 .banner__form {
@@ -31,11 +57,30 @@
   &--form {
     width: 60%;
     margin-top: 6%;
+
+    @include tablet {
+      width: 90%;
+    }
   }
 
   &--catalog {
     margin-top: 6%;
     width: rem(357px);
+  }
+
+  @include phone {
+    width: 100%;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 35%;
+  }
+}
+
+.banner__btn {
+  @include phone {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -59,6 +104,14 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
+
+  @include phone {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: rem(40px);
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .banner__text {
@@ -68,4 +121,11 @@
   line-height: rem(24px);
   text-align: center;
   width: rem(300px);
+
+  @include phone {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: rem(25px);
+  }
 }

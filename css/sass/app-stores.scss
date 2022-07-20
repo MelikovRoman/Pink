@@ -3,6 +3,13 @@
   justify-content: space-around;
   width: rem(300px);
   margin-bottom: rem(60px);
+
+  @include phone {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: rem(25px);
+    width: auto;
+  }
 }
 
 .app-stores__logo {
