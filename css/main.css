@@ -535,7 +535,12 @@ img {
 
 @media screen and (max-width: 1000px) {
   .main-nav__link {
-    padding: 25px 40%;
+    padding: 25px 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-nav__link {
+    padding: 25px 25%;
   }
 }
 

@@ -67,7 +67,11 @@
 
 .main-nav__link {
   @include tablet {
-    padding: 25px 40%;
+    padding: 25px 30%;
+  }
+
+  @include phone {
+    padding: 25px 25%;
   }
 }
 
