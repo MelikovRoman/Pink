@@ -14,9 +14,6 @@
 
   @include phone {
     background-image: none;
-    //background-position: top center;
-    //background-size: 100vw 60vh;
-    //background-repeat: no-repeat;
   }
 }
 
@@ -143,7 +140,7 @@
   @include phone {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: rem(40px);
+    margin-bottom: 0;
     text-align: center;
     width: 100%;
   }
@@ -161,7 +158,6 @@
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: rem(25px);
     font-size: 14px;
   }
 }

@@ -312,7 +312,7 @@ img {
   .banner__download {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 2.2222222222rem;
+    margin-bottom: 0;
     text-align: center;
     width: 100%;
   }
@@ -331,7 +331,6 @@ img {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 1.3888888889rem;
     font-size: 14px;
   }
 }
@@ -372,6 +371,7 @@ img {
     width: auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-bottom: 0;
   }
 }
 
