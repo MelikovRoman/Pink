@@ -13,20 +13,51 @@
   }
 
   @include phone {
-    background-image: url(../img/back-mobile.jpg);
-    background-position: top center;
-    background-size: 100vw 60vh;
-    background-repeat: no-repeat;
+    background-image: none;
+    //background-position: top center;
+    //background-size: 100vw 60vh;
+    //background-repeat: no-repeat;
   }
 }
 
-.banner__discription {
+.banner__section {
   @include phone {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    display: none;
   }
+
+  &--mobile {
+    display: none;
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+  }
+}
+
+.banner__mob-image {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.banner__mob-img {
+  border: none;
+  margin: 0 auto;
+}
+
+.banner__mob-image {
+  background-image: url(../img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.banner__mob-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .banner__info-wrapper {
@@ -71,7 +102,12 @@
     width: 100%;
     font-size: 24px;
     line-height: 29px;
-    margin-top: 35%;
+    margin-top: 25%;
+  }
+
+  &--mobile {
+    margin-top: 0;
+    margin-bottom: 10%;
   }
 }
 

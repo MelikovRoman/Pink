@@ -6,6 +6,9 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -41,7 +44,7 @@
       <h1 class="visually-hidden">Фоторедактор PINK</h1>
       <section class="section banner">
         <div class="container">
-          <div class="banner__discription">
+          <div class="banner__section">
             <h2 class="banner__title">Взгляните на жизнь иначе!</h2>
             <div class="banner__info-wrapper">
               <form class="banner__btn" action="https://www.apple.com/ru/app-store/" method="get">
@@ -74,6 +77,45 @@
             </div>
           </div>
         </div>
+
+        <!--mobile-->
+        <div class="banner__section banner__section--mobile">
+          <div class="banner__mob-image">
+            <h2 class="banner__title banner__title--mobile">Взгляните на жизнь иначе!</h2>
+            <img class="banner__mob-img" src="img/mobile-banner.png">
+          </div>
+          <div class="banner__mob-info">
+            <form class="banner__btn" action="https://www.apple.com/ru/app-store/" method="get">
+              <button class="banner__download" type="submit">Скачать приложение</button>
+            </form>
+            <ul class="banner__app-stores app-stores">
+              <li class="app-stores__item">
+                <a href="https://www.apple.com/ru/app-store/" title="Страница приложения в App Store">
+                  <svg class="app-stores__logo">
+                    <use xlink:href="img/sprite.svg#apple-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="app-stores__item">
+                <a href="https://play.google.com/store?hl=ru&gl=US" title="Страница приложения в Google Play">
+                  <svg class="app-stores__logo">
+                    <use xlink:href="img/sprite.svg#android-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="app-stores__item">
+                <a href="https://www.microsoft.com/ru-RU/store/apps" title="Страница приложения в Microsoft Store">
+                  <svg class="app-stores__logo">
+                    <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+
+
       </section>
 
       <section class="advantages">
